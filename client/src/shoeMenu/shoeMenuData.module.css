@@ -1,0 +1,7 @@
+.shoeList{
+    list-style: none;
+    padding: 0;
+}
+.shoeList.shoeListSmall li{
+    margin-top: 0.5rem;
+}

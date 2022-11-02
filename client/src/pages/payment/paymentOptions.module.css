@@ -1,0 +1,59 @@
+.check{
+    display: inherit;
+    fill: #446A46;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.continue{
+    background-color: #446A46;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 3rem;
+    width: 100%;
+}
+.load{
+    position: absolute;
+    height: 20rem;
+    top: 20%;
+    width: 25rem;
+}
+.paymentCard{
+    background-color: white;
+    border-radius: 0.5rem;
+    color: black;
+    font-size: 1rem;
+    font-style: 'sans-serif';
+    height: auto;
+    padding: 1rem 1rem 1rem 2rem;
+    text-align: left;
+    width: 25rem;
+}
+.paymentOps{
+    list-style: none;
+    padding: 0;
+}
+.paymentOps li{
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.selectOps{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.subHead{
+    color: #576F72;
+    font-size: 0.85rem;
+}
+.summary{
+    color: #446A46;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+@media screen and (max-width: 800px){
+    .paymentOps{
+        width: 100%;
+    }
+}

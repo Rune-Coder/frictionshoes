@@ -1,0 +1,37 @@
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 1rem;
+}
+.img{
+    background-color: #cfd2cfaf;
+    height: 100%;
+    width: 10rem;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+}
+.layout{
+    border: 0.063rem solid #CFD2CF;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+    width: 40rem;
+}
+.subHead{
+    color: #576F72;
+    font-size: 0.85rem;
+}
+
+@media screen and (max-width: 1000px){
+    .layout{
+        width: 100%;
+    }
+    .img img{
+        padding-top: 100%;
+    }
+}

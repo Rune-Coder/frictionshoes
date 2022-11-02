@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@200&display=swap');
+
+.head{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 5rem;
+}
+.head span{
+    font-weight: bold;
+}
+.toast{
+    animation-fill-mode: forwards;
+    animation-name: confirmToast;
+    animation-duration: 1s;
+    position: fixed;
+    right: -20rem;
+    top: 1.563rem;
+    z-index: 110;
+}
+.wish{
+    margin-top: 7.4rem;
+}
+@keyframes confirmToast {
+    from {right: -15rem;}
+    to {right: 1.875rem;}
+}
+.wishCatalogue{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 5rem 0 4rem;
+}
+@media screen and (max-width: 945px) {
+    .wish{
+        margin-top: 10.1rem;
+    }
+    .wishCatalogue{
+        padding: 0;
+    }
+}

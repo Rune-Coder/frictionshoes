@@ -1,0 +1,200 @@
+.bag{
+    background-color: #446A46;
+    color: white;
+}
+.bag, .wish{
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    height: 3rem;
+    margin-top: 2rem;
+    width: 20rem;
+}
+.cartIcon{
+    display: inherit;
+    fill: white;
+    height: 1rem;
+    width: 1rem;
+}
+.company{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.details{
+    height: 100%;
+    width: 70%;
+}
+.details, .image{
+    border-radius: 1rem;
+    padding-left: 3rem;
+}
+.discount{
+    color: #446A46;
+}
+.heartIcon{
+    display: inherit;
+    fill: none;
+    height: 1rem;
+    stroke: black;
+    stroke-width: 50;
+    width: 1rem;
+}
+.image{
+    background-color: #cfd2cfaf;
+    height: 30rem;
+    padding: 0;
+    width: 30rem;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+}
+.loading{
+    align-items: center;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    padding-top: 7.5rem;
+    width: 100%;
+}
+.loaderImg{
+    height: 15rem;
+    width: 20rem;
+}
+.mrp{
+    color: #576F72;
+    font-size: 1.3rem;
+    text-decoration: line-through;
+}
+.price{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.product{
+    color: #576F72;
+    font-size: 1.3rem;
+}
+.productDetails{
+    color: black;
+    height: auto;
+    text-align: left;
+    padding: 1rem 2rem 2rem 5rem;
+    width: 100%;
+}
+.productDetailsHead{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.productSpecsHead{
+    color: #576F72;
+    font-size: 0.9rem;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+}
+.size{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.size li button{
+    background-color: #cfd2cfaf;
+    border: 0.063rem solid #576F72;
+    border-radius: 100%;
+    color: black;
+    cursor: pointer;
+    font-size: 1rem;
+    height: 3rem;
+    width: 3rem;
+}
+.size li button.sizeActive{
+    background-color: #446A46;
+    color: white;
+}
+.size li{
+    margin-left: 1rem;
+}
+.sizeWarning{
+    color: #EB1D36;
+}
+.specs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+.specs li{
+    padding-right: 2rem;
+}
+.tax{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #446A46;
+}
+.toast{
+    animation-fill-mode: forwards;
+    animation-name: confirmToast;
+    animation-duration: 1s;
+    position: fixed;
+    right: -20rem;
+    top: 1.563rem;
+}
+@keyframes confirmToast {
+    from {right: -15rem;}
+    to {right: 1.875rem;}
+}
+.wish{
+    background-color: white;
+    border: 0.063rem solid #CFD2CF;
+    color: black;
+}
+.view{
+    color: black;
+    cursor: context-menu;
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    font-size: 1rem;
+    height: auto;
+    margin-top: 9rem;
+    padding: 1rem 1rem 0 5rem;
+    user-select: none;
+    width: 100%;
+}
+@media screen and (max-width: 945px) {
+    .bag, .wish{
+        width: 100%;
+    }
+    .details, .image{
+        padding: 0;
+    }
+    .image{
+        height: 25rem;
+        max-width: 25rem;
+    }
+    .productDetails{
+        padding-left: 2rem;
+    }
+    .size li{
+        margin-top: 1rem;
+        padding: 0;
+    }
+    .view{
+        align-items: center;
+        flex-direction: column;
+        margin-top: 11.6rem;
+        padding: 0;
+    }
+    
+}

@@ -1,0 +1,101 @@
+.alert{
+    align-items: center;
+    display: inherit;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.backdrop{
+    background-color: rgb(0, 0, 0, 0.7);
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.card{
+    border: 0.063rem solid #CFD2CF;
+    border-radius: 0.5rem;
+    color: black;
+    cursor: context-menu;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    height: 12rem;
+    margin-top: 1rem;
+    width: 40rem;
+    user-select: none;
+}
+.close{
+    cursor: pointer;
+    display: inherit;
+    fill: #576F72;
+    height: 1rem;
+    width: 1rem;
+}
+.company{
+    font-weight: bold;
+}
+.image{
+    background-color: #cfd2cfaf;
+    height: 100%;
+    width: 12rem;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+}
+.details{
+    height: 100%;
+    padding: 0 1rem 0 1rem;
+    width: 28rem;
+}
+.discount{
+    color: #446A46;
+    font-size: 1rem;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+.mrp{
+    color: #576F72;
+    font-size: 0.9rem;
+    text-decoration: line-through;
+}
+.price{
+    font-weight: bold;
+    font-size: 1rem;
+}
+.product{
+    color: #576F72;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.sizeQty{
+    font-weight: bold;
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px){
+    .card{
+        height: auto;
+        width: 100%;
+    }
+    .details{
+        width: 60%;
+    }
+    .image{
+        width: 40%;
+    }
+}

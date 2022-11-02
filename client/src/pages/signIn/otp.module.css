@@ -1,0 +1,69 @@
+.head{
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.layout{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    justify-content: center;
+    margin-top: 7.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    width: 100%;    
+}
+.otpDetails{
+    display: flex;
+    flex-direction: row;
+}
+.resend{
+    color: #446A46;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    user-select: none;
+}
+.resendTimer{
+    color: #576F72;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.subHead{
+    color: #576F72;
+    font-size: 0.9rem;
+}
+.textBox{
+    border-bottom: #576F72 solid 0.1rem;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: black;
+    font-size: 1.3rem;
+    height: 4rem;
+    margin-right: 1rem;
+    text-align: center;
+    outline: none;
+    width: 3.5rem;
+}
+.toast{
+    animation-fill-mode: forwards;
+    animation-name: confirmToast;
+    animation-duration: 1s;
+    position: fixed;
+    right: -20rem;
+    top: 1.563rem;
+}
+@keyframes confirmToast {
+    from {right: -15rem;}
+    to {right: 1.875rem;}
+}
+@media screen and (max-width: 700px){
+    .textBox{
+        margin-right: 0.8rem;
+        width: 2.5rem;
+    }
+    .layout{
+        margin-top: 10.1rem;
+    }
+}

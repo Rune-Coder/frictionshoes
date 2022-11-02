@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@200&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    color: black;
+    font-size: 1rem;
+    margin: 0;
+}
+.burger, .cart, .close{
+    display: none;
+}
+.hideMenu{
+    display: contents;
+}
+.logo{
+    cursor: pointer;
+    height: 2rem;
+    width: 9.3rem;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+.menuIcons{
+    fill: black;
+    height: 1.2rem;
+    width: 1.2rem;
+}
+.navbar{
+    background-color: #CFD2CF;
+    box-shadow: 0 1px #cfd2cfaf;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-between;
+    position: fixed;
+    padding: 2rem 0 2rem 5rem;
+    top: 0;
+    height: 7.3rem;
+    width: 100%;
+    z-index: 100;
+}
+.navIcons{
+    fill: none;
+    height: 1.2rem;
+    stroke: black;
+    stroke-width: 30;
+    width: 1.2rem;
+}
+.navlist{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navlist > li:not(.close){
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+.navlist > li:hover{
+    color: #446A46;
+    cursor: pointer;
+}
+.notify{
+    background-color: #446A46;
+    border-radius: 100%;
+    color: white;
+    font-size: 0.8rem;
+    height: 1.2rem;
+    margin: -0.5rem 0 0 2rem;
+    position: absolute;
+    text-align: center;
+    width: 1.2rem;
+}
+.profileOps{
+    background-color: rgba(207, 210, 207, 1);
+    display: none;
+    height: auto;
+    position: fixed;
+    top: 5.2rem;
+    width: 20rem;
+    z-index: 110;
+}
+.profileOps.activeTypes{
+    display: inherit;
+}
+.profileOps:hover{
+    display: inherit; 
+}
+.showMenu{
+    display: none;
+}
+@media screen and (max-width: 945px) {
+    .backdrop{
+        background-color: rgb(0, 0, 0, 0.7);
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    .burger{
+        display: contents;
+        cursor: pointer;
+    }
+    .cart{
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    }
+    .hideMenu{
+        display: none;
+    }
+    .navbar{
+        flex-wrap: wrap;
+        height: 10rem;        
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .navlist{
+        align-items: flex-start;
+        background-color:#CFD2CF;
+        box-shadow: 1px 0 #cfd2cfaf;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: flex-start;
+        left: -18rem;
+        overflow-y: auto;
+        padding: 0 0 2rem 1rem;
+        position: fixed;
+        top: 0;
+        transition: left 0.5s;
+        width: 18rem;
+        z-index: 100;
+    }
+    .navlist.menubar{
+        left: 0;
+    }
+    .navlist.menubar .cartMenu{
+        display:none;
+    }
+    .navlist.menubar > li:not(.cartMenu){
+        margin: 0;
+        padding-top: 1.5rem;
+        padding-left: 1rem;
+        width: 40%;
+    }
+    .navlist.menubar > li:not(.close):not(.cartMenu){
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+    .notify{
+        margin: -0.5rem 0 0 1rem;
+    }
+    .profileSmall{
+        width: 100%;
+    }
+    .showMenu{
+        display: contents;
+    }
+}

@@ -1,0 +1,16 @@
+.head{
+    font-weight: bold;
+}
+.subHead{
+    font-size: 0.8rem;
+}
+.profileList{
+    color: black;
+    font-size: 1rem;
+    list-style: none;
+    padding: 1rem 0 1rem 1rem;
+}
+.profileList li:hover{
+    color: #446A46;
+    cursor: pointer;
+}

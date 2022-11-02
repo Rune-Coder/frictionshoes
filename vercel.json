@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "./frictionServer.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/.*",
+            "dest": "frictionServer.js"
+        }
+    ]
+}

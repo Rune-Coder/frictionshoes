@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@200&display=swap');
+.alert{
+    position: fixed;
+    z-index: 100;
+}
+.backdrop{
+    background-color: rgb(0, 0, 0, 0.7);
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.cart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.cartItems{
+    display: flex;
+    flex-direction: column;
+    height: auto;  
+    width: 40rem;
+}
+.cartBill{
+    height: auto;
+    width: auto;
+}
+img{
+    height: 10rem;
+    width: 10.5rem;
+}
+@media screen and (max-width: 1000px){
+    .cart{
+        justify-content: center;
+        padding: 0 1rem 0 1rem;
+    }
+    .cartBill{
+        margin-top: 5rem;
+        width: 100%;
+    }
+    .cartItems{
+        width: 100%;
+    }
+}

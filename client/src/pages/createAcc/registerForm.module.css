@@ -1,0 +1,112 @@
+.details{
+    height: auto;
+    padding-bottom: 1rem;
+    position: relative;
+    user-select: none;
+    width: auto;
+}
+.errmsg{
+    color: #EB1D36;
+    font-size: 0.8rem;
+}
+.formLabel{
+    color: #576F72;
+    cursor: text;
+    font-size: 0.85rem;
+    left: 1rem;
+    pointer-events: none;
+    position: absolute;
+    top: 0.9rem;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+    user-select: none;
+}
+.gen{
+    align-items: center;
+    color: #576F72;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-evenly;
+    padding-bottom: 1rem;
+    position: relative;
+    user-select: none;
+    width: auto;
+}
+.gen input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.gen input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #446A46;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+.load{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+.save{
+    background-color: #446A46;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 3rem;
+    width: 100%;
+}
+.show{
+    color: #576F72;
+    cursor: pointer;
+    font-size: 0.85rem;
+    right: 1rem;
+    position: absolute;
+    top: 0.9rem;
+    user-select: none;
+}
+.textBox{
+    border: 0.063rem solid #cfd2cfaf;
+    border-radius: 0.2rem;
+    color: rgba(0, 0, 0, 0.815);
+    height: 3rem;
+    padding: 0 1rem 0 1rem;
+    outline: none;
+    width: 100%;
+}
+.textBox:focus{
+    outline-color: rgba(0, 0, 0, 0.815);
+    outline-style: solid;
+    outline-width: thin; 
+}
+.textBox:focus ~ .formLabel, 
+.textBox:not(:placeholder-shown).textBox:not(:focus) ~ .formLabel{
+    background: white;
+    font-size: 0.8rem;
+    left: 0.6rem;
+    top: -0.65rem;
+}
+
+@media screen and (max-width: 800px){
+    .load{
+        top: 30%;
+        left: -5%;
+    }
+}

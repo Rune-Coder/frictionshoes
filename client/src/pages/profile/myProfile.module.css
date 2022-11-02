@@ -1,0 +1,39 @@
+.accDetails{
+    display: grid;
+    grid-template-columns: 40ch auto;
+    grid-template-rows: 5ch 5ch 5ch 5ch;
+}
+.head{
+    color: #446A46;
+    font-weight: bold;
+}
+.profile{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    margin-top: 7.4rem;
+    padding: 0 1rem 1rem 1rem;
+    width: 100%;
+}
+.save{
+    background-color: #446A46;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 3rem;
+    width: 25rem;
+}
+@media screen and (max-width: 1000px){
+    .accDetails{
+        grid-template-columns: 20ch 20ch;
+    }
+    .profile{
+        margin-top: 10.1rem;
+    }
+    .save{
+        width: 100%;
+    }
+}

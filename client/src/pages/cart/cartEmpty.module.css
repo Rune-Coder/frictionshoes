@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@200&display=swap');
+
+button{
+    background-color: #446A46;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 3rem;
+    width: 10rem;
+}
+.cartImg{
+    height: 10rem;
+    width: 10.5rem;
+}
+.emptyBag{
+    color: rgba(0, 0, 0, 0.848);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: auto;
+    padding: 5rem 0 5rem 0;
+    text-align: center;
+    user-select: none;
+    width: 100%;
+}
+.subHead{
+    font-size: 1rem;
+    color: #576F72;
+}

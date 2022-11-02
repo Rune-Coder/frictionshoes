@@ -1,0 +1,16 @@
+.rating{
+    display: flex;
+    flex-direction: row;
+}
+.star{
+    fill: #576F72;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+    width: 1.2rem;
+}
+.star.starFill{
+    fill: #446A46;
+}
+.star.avg{
+    fill: #FFB200;
+}

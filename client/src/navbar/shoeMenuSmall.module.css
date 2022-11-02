@@ -1,0 +1,44 @@
+.angleDown{
+    display: inherit;
+    fill: black;
+    height: 0.8rem;
+    width: 0.8rem;
+}
+.angleRight{
+    display: inherit;
+    fill: black;
+    height: 0.5rem;
+    width: 0.5rem;
+}
+.headItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.smallMenu{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    user-select: none;
+    width: 90%;
+}
+.subHead{
+    width: 90%;
+}
+.subHeadItem{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+.subList{
+    list-style: none;
+    padding-left: 0.5rem;
+}

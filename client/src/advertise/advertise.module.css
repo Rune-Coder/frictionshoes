@@ -1,0 +1,81 @@
+.app{
+    align-items: center;
+    background-color: #cfd2cfaf;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    width: 50%;
+}
+.app p{
+    margin: 2rem 0 0 2rem;
+    height: 1rem;
+    width: 100%;
+}
+.appBtn{
+    align-items: center;
+    background-color: #446A46;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    height: 4rem;
+    justify-content: space-around;
+    margin-left: 1rem;
+    width: 16rem;
+}
+.advertise{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    height: auto;
+    width: 100%;
+}
+.characteristics{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.characteristics div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0 5rem 0;
+}
+.play{
+    fill: white;
+    height: 2rem;
+    width: 2rem;
+}
+.services{
+    fill: #446A46;
+    height: 3rem;
+    width: 3rem;
+}
+@media screen and (max-width: 1000px){
+    .advertise{
+        flex-direction: column;
+    }
+    .app{
+        height: 10rem;
+    }
+    .app, .characteristics{
+        width: 100%;
+    }
+    .appBtn{
+        height: 3rem;
+        width: 10rem;
+    }
+    .singleCharacteristic{
+        
+        text-align: center;
+    }
+}

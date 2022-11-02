@@ -1,0 +1,106 @@
+.card{
+    border: 0.063rem solid #CFD2CF;
+    border-radius: 0.5rem;
+    color: black;
+    font-size: 1rem;
+    font-family: sans-serif;
+    cursor: pointer;
+    height: 25rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    user-select: none;
+    width: 16rem;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0 0.313rem 0.938rem;
+}
+.comName{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.desc{
+    border-radius: 0.5rem;
+    height: 40%;
+    padding: 1rem 1rem 0 1rem;
+    width: 100%;
+}
+.discount{
+    color: #446A46;
+}
+.image{
+    background-color: #cfd2cfaf;
+    border-radius: 0.5rem;
+    height: 60%;
+    width: 100%;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+}
+.mrp{
+    color: #576F72;
+    font-size: 0.9rem;
+    text-decoration: line-through;
+}
+.pName{
+    color: #576F72;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.price{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.priceCart{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+}
+.star{
+    fill: #576F72;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+    width: 1.2rem;
+}
+.wishList{
+    display: flex;
+    fill: #576F72;
+    height: 1.2rem;
+    pointer-events:none;
+    width: 1.2rem;
+}
+.wishList.activeWish{
+    fill: #446A46;
+}
+@media screen and (max-width: 945px) {
+
+    .card{
+        height: 21rem;
+        width: 12rem;
+    }
+    .image{
+        height: 12rem;
+    }
+    .mrp{
+        font-size: 0.7rem;
+    }
+    .pName{
+        padding: 0;
+        margin-top: 0.1rem;
+    }
+    .price{
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+    
+}

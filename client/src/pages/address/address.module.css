@@ -1,0 +1,24 @@
+.address{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-between;
+    padding: 2rem 5rem 0 5rem;  /*top right bottom left*/
+    width: 100%;
+}
+.form{
+    padding-bottom: 1rem;
+} 
+@media screen and (max-width: 1000px){
+    .address{
+        padding: 3rem 0.5rem 0 0.5rem;
+        width: 100%;
+    }
+    .savedAdd{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+    }
+}
